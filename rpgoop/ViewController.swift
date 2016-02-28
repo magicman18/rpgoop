@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         
         player = Player(name: "Dirty Laundry", hp: 110, attackPwr: 20)
         
+        generateRandomEnemy()
+        
         playerHpLbl.text = "\(player.hp) HP"
         
     }
@@ -41,6 +43,8 @@ class ViewController: UIViewController {
         } else {
             enemy = DevilWizard(startingHp: 60, attackPwr: 15)
         }
+        
+        enemyImg.hidden = false
     }
 
 
